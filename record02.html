@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>아이엔터</title>
+	<link rel="stylesheet" href="resource/font/style.css">
+	<link rel="stylesheet" href="resource/css/common.css">
+	<link rel="stylesheet" href="resource/css/contents.css">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/jquery.datepicker.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<!-- header -->
+		<header id="header">
+			<div class="inner">
+				<h1><a href="/"><img src="resource/images/img_logo.png" alt="아이엔터"></a></h1>
+				<button type="button" class="btnMenu" onclick="$('body').toggleClass('menuOn');">메뉴</button>
+				<nav id="gnb">
+					<ul>
+						<li><a href="class.html" class="menu1">클래스</a></li>
+						<li class="active"><a href="record01.html" class="menu2">클래스 기록실</a></li>
+						<li><a href="game_info.html" class="menu3">게임소개</a></li>
+						<li><a href="edu.html" class="menu4">교육 자료실</a></li>
+					</ul>
+					<div class="mem">
+						<span>
+							<a href="#" class="signUp">회원가입</a>
+							<a href="#" class="signIn">로그인</a>
+						</span>
+						<span style="display:none;">
+							<span class="userName">
+								<img src="resource/images/img_user_sample.png" alt="">홍길동
+							</span>
+							<a href="#" class="memSet">설정</a>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- //header -->
+		
+		<div id="container">
+
+			<!-- snb -->
+			<div id="snb" class="sub02">
+				<h2 class="pageTitle"><span>클래스 기록실</span></h2>
+			</div>
+			<!-- //snb -->
+
+			<!-- contents -->
+			<div id="contents">
+				<div class="tabMenu">
+					<ul>
+						<li><a href="record01.html">성장 포인트 기록실</a></li>
+						<li class="active"><a href="record02.html">스포츠 기록실</a></li>
+						<li><a href="record03.html">하이라이트</a></li>
+					</ul>
+				</div>
+
+				<section>
+					<h3 class="subTitle2">클래스 평균 기록</h3>
+					<a href="#" class="btnType0">자세히보기</a>
+					<div class="gameList">
+						<ul>
+							<li>
+								<span clas="box">
+									<span class="img"><img src="" alt=""></span>
+									<span class="tit">멀리차기</span>
+									<span class="item1"><span class="itemTit">비거리</span> 43m</span>
+									<span class="item2"><span class="itemTit">스피드</span> 61km/h</span>
+								</span>
+							</li>
+							<li>
+								<span clas="box">
+									<span class="img"><img src="" alt=""></span>
+									<span class="tit">티볼</span>
+									<span class="item1"><span class="itemTit">비거리</span> 80m</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="subTitle2">평균 기록 비교</h3>
+				</section>
+
+				<section>
+					<h3 class="subTitle2">최근 게임 기록</h3>
+					<fieldset class="searchRight">
+						<legend>검색일 입력</legend>
+						<input type="text" class="inputTxt datepicker">
+						<span>~</span>
+						<input type="text" class="inputTxt datepicker">
+						<button class="btnType0">검색</button>
+					</fieldset>
+					<div class="tableType0">
+						<table>
+							<caption>최근 게임 기록 정보 테이블</caption>
+							<thead>
+								<tr>
+									<th scope="col">날짜</th>
+									<th scope="col">게임 명</th>
+									<th scope="col">참여인원</th>
+									<th scope="col">평균 비거리(m)</th>
+									<th scope="col">평균 스피드(km/h)</th>
+									<th scope="col">칼로리</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2018-12-20</td>
+									<td class="name">공튀기기</td>
+									<td>10</td>
+									<td>80</td>
+									<td>70</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td>2018-12-20</td>
+									<td class="name">공튀기기</td>
+									<td>10</td>
+									<td>80</td>
+									<td>70</td>
+									<td>60</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+			</div>
+			<!-- //contents -->
+		</div>
+
+		
+	</div>
+</body>
+</html>

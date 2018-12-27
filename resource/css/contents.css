@@ -93,3 +93,55 @@
 	background: url(../images/btn_add_class.png) no-repeat 50% 40%;
 }
 .clsList .addClass:after {display: none;}
+@media all and (max-width: 1023px) {
+	.clsList {
+		margin: -25px -10px 0;
+		text-align: center;
+	}
+	.clsList li {
+		float: none;
+		display: inline-block;
+		width: 28%;
+		margin: 25px 10px;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+}
+@media all and (max-width: 767px) {
+	.clsList {
+		margin: -1.5rem -1rem;
+	}
+	.clsList li {
+		width: 40%;
+		height: 20rem;
+		margin: 1.5rem 1rem;
+	}
+	.clsList .cls {
+		width: 70%;
+		margin: 2rem auto 1rem;
+		line-height: 5rem;
+		font-size: 1.6rem;
+	}
+	.clsList .year {
+		width: 70%;
+		font-size: 1.4rem;
+	}
+	.clsList .people {
+		height: 6rem;
+	}
+	.clsList .people span {
+		padding-top: 1.2rem;
+		font-size: 1.2rem;
+	}
+	.clsList .people em {
+		font-size: 1.4rem;
+	}
+	.clsList .addClass a {
+		display: block;
+		height: 20rem;
+		padding-top: 12rem;
+		background-size: 5rem;
+		box-sizing: border-box;
+		font-size: 2rem;
+	}
+}

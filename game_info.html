@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>아이엔터</title>
+	<link rel="stylesheet" href="resource/font/style.css">
+	<link rel="stylesheet" href="resource/css/common.css">
+	<link rel="stylesheet" href="resource/css/contents.css">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/jquery.datepicker.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<!-- header -->
+		<header id="header">
+			<div class="inner">
+				<h1><a href="/"><img src="resource/images/img_logo.png" alt="아이엔터"></a></h1>
+				<button type="button" class="btnMenu" onclick="$('body').toggleClass('menuOn');">메뉴</button>
+				<nav id="gnb">
+					<ul>
+						<li><a href="class.html" class="menu1">클래스</a></li>
+						<li><a href="record01.html" class="menu2">클래스 기록실</a></li>
+						<li class="active"><a href="game_info.html" class="menu3">게임소개</a></li>
+						<li><a href="edu.html" class="menu4">교육 자료실</a></li>
+					</ul>
+					<div class="mem">
+						<span>
+							<a href="#" class="signUp">회원가입</a>
+							<a href="#" class="signIn">로그인</a>
+						</span>
+						<span style="display:none;">
+							<span class="userName">
+								<img src="resource/images/img_user_sample.png" alt="">홍길동
+							</span>
+							<a href="#" class="memSet">설정</a>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- //header -->
+		
+		<div id="container">
+
+			<!-- snb -->
+			<div id="snb" class="sub03">
+				<h2 class="pageTitle"><span>게임 소개</span></h2>
+				<!-- <nav class="menuList">
+					<ul>
+						<li class="active"><a href="#" class="menu1"><span>게임 소개</span></a></li>
+						<li><a href="#" class="menu2"><span>상세 검색 조건</span></a></li>
+						<li><a href="#" class="menu3"><span>게임 상세 소개</span></a></li>
+					</ul>
+				</nav> -->
+			</div>
+			<!-- //snb -->
+
+			<!-- contents -->
+			<div id="contents">
+
+				<section>
+					<h3 class="subTitle">상세검색</h3>
+					<button type="button" class="btnType0">검색조건 자세히보기</button>
+					<div>
+						<table>
+							<caption>상세 검색 목록</caption>
+							<tbody>
+								<tr>
+									<th scope="row">공간</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>플레이 존</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>VR 존</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스포츠 존</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>체력증진</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>융합교육</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스포츠</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">과목 선택</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>국어</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>영어</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>수학</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>과학</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>상식</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>음악</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>미술</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>한자</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>기타</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">동작 유형</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>공 던지기</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>공 차기</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>공 치기</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">체력 항목</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>심폐지구력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>근지구력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>근력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>유연성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>순발력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>민첩성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>협융성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>평형성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스피드</span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btnWrap">
+							<button type="button" class="btnType0">검색</button>
+							<button type="button" class="btnType1">전체 선택 해제</button>
+						</div> 
+					</div>
+					<div class="gameList">
+						<ul>
+							<li class="football">
+								<span clas="box">
+									<span class="img"><img src="" alt=""></span>
+									<span class="tit">멀리차기</span>
+									<span class="item1"><span class="itemTit">인원</span> 2-10(명)</span>
+									<span class="item2"><span class="itemTit">시간</span> 10-60(분)</span>
+									<span class="item3">
+										<span class="itemTit">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="layerOpen('gameDetail');">자세히보기</button>
+								</span>
+							</li>
+							<li class="baseball">
+								<span clas="box">
+									<span class="img"><img src="" alt=""></span>
+									<span class="tit">멀리차기</span>
+									<span class="item1"><span class="itemTit">인원</span> 2-10(명)</span>
+									<span class="item2"><span class="itemTit">시간</span> 10-60(분)</span>
+									<span class="item3">
+										<span class="itemTit">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="layerOpen('gameDetail');">자세히보기</button>
+								</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="pagination">
+						<a href="#" class="navStart">처음</a>
+						<a href="#" class="navPrev">이전</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="navNext">다음</a>
+						<a href="#" class="navEnd">끝</a>
+					</div>
+
+				</section>
+
+			</div>
+			<!-- //contents -->
+		</div>
+	
+		<!-- layer -->
+		<div class="layerWrap" id="gameDetail">
+			<section class="layerBox">
+				<h3 class="layerHeader">게임 상세 소개</h3>
+				<div class="layerContents">
+					<div>
+						<span class="img"><img src="" alt=""></span>
+						<h4>멀리차기</h4>
+						<p>별도입력(간단한 설명)</p>
+						<p class="item3">
+							<span class="itemTit">대상</span>
+							<span class="count">
+								<span class="on">1</span>
+								<span class="on">2</span>
+								<span class="on">3</span>
+								<span>4</span>
+								<span>5</span>
+								<span>6</span>
+							</span>
+						</p>
+						<p class="item2">
+							<span class="itemTit">부스위치</span>
+							3면부스
+						</p>
+					</div>
+
+				</div>
+				<button type="button" onclick="layerClose();">게임 상세 소개 레이어닫기</button>
+			</section>
+		</div>
+		<!-- //layer -->
+	</div>
+</body>
+</html>
