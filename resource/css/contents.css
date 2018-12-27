@@ -1,1 +1,95 @@
 @charset "utf-8";
+
+.clsList {
+	margin: -25px -35px 0;
+}
+.clsList:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.clsList li {
+	position: relative;
+	float: left;
+	width: 220px; height: 256px;
+	margin: 25px 35px;
+	background: #457dc9;
+	border-radius: 4px;
+	text-align: center;
+}
+.clsList li:after {
+	content: "";
+	position: absolute;
+	top: 8px; left: -9px; bottom: 8px;
+	width: 18px;
+	background: url(../images/bg_spring.png) repeat-y; 
+}
+.clsList li.disabled {
+	background: #bdcde2;
+}
+
+.clsList .cls {
+	position: relative;
+	display: block;
+	width: 144px;
+	margin: 25px auto 15px;
+	line-height: 78px;
+	background: #f2f7fb;
+	border: 6px solid #fff;
+	font-size: 18px;
+}
+.clsList .cls:after {
+	content: "";
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	border: 1px solid #000;
+}
+.clsList .year {
+	display: block;
+	width: 130px;
+	line-height: 26px;
+	margin: 0 auto;
+	background: rgba(255,255,255, .5) url(../images/icon_cls_set.png) no-repeat 95% 50%;
+	border-radius: 5px;
+}
+.clsList .people {
+	position: absolute;
+	right: 0; bottom: 0; left: 0;
+	height: 60px;
+	background: #53b8ef;
+	border-radius: 0 0 5px 5px;
+}
+.clsList li.disabled .people {background: #9ec8e7;}
+.clsList .people:after {
+	content: "";
+	position: absolute;
+	top: 0; bottom: 0; left: 50%;
+	border-left: 1px solid #7cc7f2;
+}
+.clsList li.disabled .people:after {border-color: #b0d2ec;}
+.clsList .people span {
+	float: left;
+	width: 50%;
+	padding-top: 8px;
+	color: #2a5389;
+	font-size: 13px;
+	line-height: 1.4;
+}
+.clsList .people em {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+}
+.clsList .addClass {
+	background: #fffce7;
+	border: 2px dashed #ffdd94;
+	color: #666;
+	font-size: 22px;
+}
+.clsList .addClass a {
+	display: block;
+	height: 116px;
+	padding: 155px 0 0;
+	background: url(../images/btn_add_class.png) no-repeat 50% 40%;
+}
+.clsList .addClass:after {display: none;}
