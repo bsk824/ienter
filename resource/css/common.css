@@ -18,6 +18,28 @@ button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0
 button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
 
+.inputTxt, select {
+	height: 30px;
+	padding: 0 10px;
+	border: 1px solid #e9ecef;
+	border-radius: 4px;
+	color: #666;
+}
+
+[class*="btnType"] {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.btnType0 {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 17px;
+	background:#457dc9;
+	color: #fff;
+	border-radius: 4px;
+}
+
 /* layout */
 body {background: #e9edf1;}
 #wrap {padding: 110px 0 0;}
@@ -396,9 +418,16 @@ body {background: #e9edf1;}
 	}
 }
 
+.section ~ .section {
+	margin-top: 40px;
+}
 .subTitle {
 	margin: 35px 0 25px;
 	font-size: 26px;
+}
+.subTitle2 {
+	margin: -8px 0 20px;
+	font-size: 24px;
 }
 @media all and (max-width: 767px) {
 	.subTitle {
@@ -406,3 +435,86 @@ body {background: #e9edf1;}
 		font-size: 2rem;
 	}
 }
+
+.tabMenu {
+	margin: 20px 0 30px;
+	border-bottom: 1px solid #e1e5e9;
+}
+.tabMenu ul:after {content:"";display:block;clear:both;}
+.tabMenu li {float:left;}
+.tabMenu li a {
+	display: block;
+	padding: 0 20px;
+	font-size: 15px;
+	line-height: 40px;
+	border-radius: 4px 4px 0 0;
+}
+.tabMenu li.active a {
+	background: #457dc9;
+	color: #fff;
+}
+
+.btnRight {
+	float: right;
+	margin-top: -50px;
+}
+.searchRight {
+	float: right;
+	margin-top: -50px;
+}
+[class*="tableType"] {overflow: hidden;}
+[class*="tableType"] table {
+	margin-left: -1px;
+	border-bottom: 1px solid #dee2e6;
+}
+[class*="tableType"] thead th {
+	padding: 15px 0;
+	border-bottom: 1px solid #dee2e6;
+	font-weight: 500;
+}
+[class*="tableType"] th,
+[class*="tableType"] td {
+	border-top: 1px solid #dee2e6;
+	border-left: 1px solid #eef0f2;
+	font-size: 13px;
+	text-align: center;
+}
+[class*="tableType"] td {padding: 10px 0;}
+[class*="tableType"] .bg {background: #feffd3;}
+[class*="tableType"] .bg .point {background: #f1f8d6;}
+[class*="tableType"] .point {
+	background: #f2f8ff;
+	color: #225fb2;
+}
+[class*="tableType"] .name {color: #225fb2;}
+
+.tableTyp0 {}
+
+
+#ui-datepicker-div {display:none;border:1px solid #bbb;background:#fff;border-radius:9px;}
+.ui-datepicker-trigger {position:absolute;right:12px;top:0;width:40px;height:40px;border-color:#bbb;background:#eee;}
+.ui-datepicker-trigger img {width:20px;height:20px;}
+.ui-datepicker {width:275px;}
+.ui-datepicker .ui-datepicker-header {position:relative;padding:13px 0;font-size: 16px;color:#111;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {position:absolute;top:13px;width:15px;height:15px}
+.ui-state-disabled {cursor:default !important;pointer-events:none;}
+.ui-icon {text-indent:-5000px;overflow:hidden}
+.ui-datepicker-prev span, .ui-datepicker-next span {display:inline-block;width:10px;height:10px;border-top:1px solid #444;border-right:1px solid #444;-webkit-transform:rotate(-135deg);-moz-transform:rotate(-135deg);transform:rotate(-135deg);}
+.ui-datepicker-next span {transform: rotate(45deg);-webkit-transform:rotate(45deg);}
+.ui-datepicker .ui-datepicker-prev {left:12px}
+.ui-datepicker .ui-datepicker-next {right:12px}
+.ui-datepicker .ui-datepicker-title {line-height:16px;text-align:center;color:#111}
+.ui-datepicker .ui-datepicker-title select {font-size:1em;margin:1px 0}
+.ui-datepicker table {width:90%;border-collapse:collapse;margin:auto;font-size:12px}
+.ui-datepicker th {padding:.7em .3em;text-align:center;border:0;}
+.ui-datepicker th:first-child {color:#dc8572;}
+.ui-datepicker th:last-child {color:#7093f6;}
+.ui-datepicker td {border:0;padding:2px}
+.ui-datepicker td.ui-datepicker-today a {background-color:#ea4a3e;border:none;color:#fff;}
+.ui-datepicker td span,
+.ui-datepicker td a {display:block;margin:0 auto;color:#111;font-size:13px;width:33px;height:27px;border:1px solid #ddd;border-radius:5px;line-height:24px;text-align:center;text-decoration:none;box-sizing:border-box;}
+.ui-datepicker .ui-datepicker-buttonpane {margin-top:5px;text-align:center;border-top:1px solid #eee}
+.ui-datepicker .ui-datepicker-buttonpane button {overflow:visible}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {display:none}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {width:100%;overflow:hidden;border:0;display:inline-block;height:35px;background:#f6f6f6;font-size:13px;color:#111;border-radius:0 0 10px 10px;}

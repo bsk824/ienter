@@ -145,3 +145,89 @@
 		font-size: 2rem;
 	}
 }
+
+.pointTop:after {content:"";display:block;clear:both;}
+.pointWrap {
+	position: relative;
+	float: left;
+	width: 410px; height: 335px;
+	background: url(../images/bg_record_point.png) no-repeat;
+	text-align: center;
+}
+.pointWrap .total {
+	padding: 28px 0 0;
+	color: #fff;
+}
+.pointWrap .total .tit {
+	display: block;
+	font-size: 20px;
+}
+.pointWrap .total .point {font-size: 24px;}
+.pointWrap .total .point strong {font-size: 48px;}
+.pointWrap .cp {
+	position: absolute;
+	bottom: 15px; right: 25px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #fff;
+}
+.pointWrap .cp span {
+	display: block;
+	font-size: 15px;
+	color: #ffd220;
+}
+
+.pointList {
+	float: right;
+	width: 410px;
+	margin-top: -10px;
+}
+.pointList li {
+	overflow: hidden;
+	float: left;
+	width: 198px;
+	margin: 10px 0 0 5px;
+	border: 1px solid #ccdee8;
+	border-radius: 3px;
+	text-align: center;
+}
+.pointList .p {
+	position: relative;
+	display: block;
+	line-height: 71px;
+	padding-left: 64px;
+	color: #457dc9;
+	font-size: 26px;
+}
+.pointList .p:after {
+	content:"";
+	position: absolute;
+	top: 0; left: 10px;
+	width: 70px; height: 70px;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+.pointList .t {
+	display: block;
+	line-height: 32px;
+	background: #f2f7fb;
+	color: #4c4c4c;
+	font-weight: 500;
+}
+.pointList .point1 .p:after {background-image: url(../images/bg_point_list01.png);}
+.pointList .point2 .p:after {background-image: url(../images/bg_point_list02.png);}
+.pointList .point3 .p:after {background-image: url(../images/bg_point_list03.png);}
+.pointList .point4 .p:after {background-image: url(../images/bg_point_list04.png);}
+.pointList .point5 .p:after {background-image: url(../images/bg_point_list05.png);}
+.pointList .point6 .p:after {background-image: url(../images/bg_point_list06.png);}
+
+
+.gameList ul:after {content:"";display:block;clear:both;}
+.gameList li {
+	float: left;
+	width: 50%;
+}
+.gameList .box {
+	border: 1px solid #ccdee8;
+	border-radius: 3px;
+}
