@@ -746,6 +746,22 @@ body {background: #e9edf1;}
 	font-size: 20px;
 	font-weight: 400;
 }
+@media all and (max-width: 767px) {
+	.layerWrap .layerHeader {
+		font-size: 1.8rem;
+		line-height: 2.5;
+	}
+	.layerWrap .layerBox {width: 90%;}
+	.layerWrap .layerContents {padding: 1rem;}
+	.layerWrap .subTitle {
+		margin: 2rem 0 1rem;
+		font-size: 1.6rem;
+	}
+	.layerWrap .btnClose {
+		top: 1.4rem;
+	}
+}
+
 #ui-datepicker-div {display:none;border:1px solid #bbb;background:#fff;border-radius:9px;}
 .ui-datepicker-trigger {position:absolute;right:12px;top:0;width:40px;height:40px;border-color:#bbb;background:#eee;}
 .ui-datepicker-trigger img {width:20px;height:20px;}

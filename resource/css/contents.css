@@ -392,6 +392,9 @@
 	float: left;
 	width: 33.33%;
 }
+@media all and (max-width: 767px) {
+	.layerWrap .gameInfo li {width: 50%;}
+}
 .layerWrap .gameInfo .box {
 	position: relative;
 	display: block;
