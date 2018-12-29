@@ -65,10 +65,10 @@
 			<!-- contents -->
 			<div id="contents">
 
-				<section>
+				<section class="gameInfoSection">
 					<h3 class="subTitle">상세검색</h3>
-					<button type="button" class="btnType0">검색조건 자세히보기</button>
-					<div>
+					<button type="button" class="btnType0 btnRight" onclick="$(this).toggleClass('active').next('.searchDetail').slideToggle(200);">검 색조건 <span class="show">자세히보기</span><span class="hide">닫기</span></button>
+					<div class="searchDetail">
 						<table>
 							<caption>상세 검색 목록</caption>
 							<tbody>
@@ -209,19 +209,20 @@
 						</table>
 						<div class="btnWrap">
 							<button type="button" class="btnType0">검색</button>
-							<button type="button" class="btnType1">전체 선택 해제</button>
+							<button type="button" class="btnType1" onclick="$(this).closest('.searchDetail').find('input').prop('checked', false);">전체 선택 해제</button>
 						</div> 
 					</div>
+					
 					<div class="gameList">
 						<ul>
-							<li class="football">
-								<span clas="box">
-									<span class="img"><img src="" alt=""></span>
-									<span class="tit">멀리차기</span>
-									<span class="item1"><span class="itemTit">인원</span> 2-10(명)</span>
-									<span class="item2"><span class="itemTit">시간</span> 10-60(분)</span>
-									<span class="item3">
-										<span class="itemTit">대상</span>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample1.png" alt=""></span>
+									<b class="tit">멀리차기</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
 										<span class="count">
 											<span class="on">1</span>
 											<span class="on">2</span>
@@ -231,17 +232,17 @@
 											<span>6</span>
 										</span>
 									</span>
-									<button type="button" class="btnType2" onclick="layerOpen('gameDetail');">자세히보기</button>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
 								</span>
 							</li>
-							<li class="baseball">
-								<span clas="box">
-									<span class="img"><img src="" alt=""></span>
-									<span class="tit">멀리차기</span>
-									<span class="item1"><span class="itemTit">인원</span> 2-10(명)</span>
-									<span class="item2"><span class="itemTit">시간</span> 10-60(분)</span>
-									<span class="item3">
-										<span class="itemTit">대상</span>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample2.png" alt=""></span>
+									<b class="tit">티볼</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
 										<span class="count">
 											<span class="on">1</span>
 											<span class="on">2</span>
@@ -251,7 +252,87 @@
 											<span>6</span>
 										</span>
 									</span>
-									<button type="button" class="btnType2" onclick="layerOpen('gameDetail');">자세히보기</button>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
+								</span>
+							</li>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample1.png" alt=""></span>
+									<b class="tit">멀리차기</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
+								</span>
+							</li>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample2.png" alt=""></span>
+									<b class="tit">티볼</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
+								</span>
+							</li>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample1.png" alt=""></span>
+									<b class="tit">멀리차기</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
+								</span>
+							</li>
+							<li>
+								<span class="box">
+									<span class="img"><img src="resource/images/img_game_sample2.png" alt=""></span>
+									<b class="tit">티볼</b>
+									<span class="item"><span class="itemTit1">인원</span> 2~10(명)</span>
+									<span class="item"><span class="itemTit2">시간</span> 10~60(분)</span>
+									<span class="item">
+										<span class="itemTit3">대상</span>
+										<span class="count">
+											<span class="on">1</span>
+											<span class="on">2</span>
+											<span class="on">3</span>
+											<span>4</span>
+											<span>5</span>
+											<span>6</span>
+										</span>
+									</span>
+									<button type="button" class="btnType2" onclick="$('#gameDetail').show();">자세히보기</button>
 								</span>
 							</li>
 						</ul>
@@ -260,16 +341,18 @@
 					<div class="pagination">
 						<a href="#" class="navStart">처음</a>
 						<a href="#" class="navPrev">이전</a>
-						<strong>1</strong>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">6</a>
-						<a href="#">7</a>
-						<a href="#">8</a>
-						<a href="#">9</a>
-						<a href="#">10</a>
+						<span class="pagNum">
+							<strong>1</strong>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">7</a>
+							<a href="#">8</a>
+							<a href="#">9</a>
+							<a href="#">10</a>
+						</span>
 						<a href="#" class="navNext">다음</a>
 						<a href="#" class="navEnd">끝</a>
 					</div>
@@ -285,29 +368,77 @@
 			<section class="layerBox">
 				<h3 class="layerHeader">게임 상세 소개</h3>
 				<div class="layerContents">
-					<div>
-						<span class="img"><img src="" alt=""></span>
-						<h4>멀리차기</h4>
-						<p>별도입력(간단한 설명)</p>
-						<p class="item3">
-							<span class="itemTit">대상</span>
-							<span class="count">
-								<span class="on">1</span>
-								<span class="on">2</span>
-								<span class="on">3</span>
-								<span>4</span>
-								<span>5</span>
-								<span>6</span>
-							</span>
-						</p>
-						<p class="item2">
-							<span class="itemTit">부스위치</span>
-							3면부스
-						</p>
+					<div class="gameList">
+						<div class="box">
+							<span class="img"><img src="resource/images/img_game_sample1.png" alt=""></span>
+							<h4 class="tit">멀리차기</h4>
+							<p class="txt">별도입력(간단한 설명)</p>
+							<p class="item">
+								<span class="itemTit3">대상</span>
+								<span class="count">
+									<span class="on">1</span>
+									<span class="on">2</span>
+									<span class="on">3</span>
+									<span>4</span>
+									<span>5</span>
+									<span>6</span>
+								</span>
+							</p>
+							<p class="item">
+								<span class="itemTit2">부스위치</span>
+								3면부스
+							</p>
+						</div>
+					</div>
+					
+					<div class="gameInfo">
+						<ul>
+							<li><span class="box"><span class="tit1">인원</span> 2~10(명)</span></li>
+							<li><span class="box"><span class="tit2">연계과목</span> 수학, 상식</span></li>
+							<li><span class="box"><span class="tit3">신체활동 유형</span> 공 던지기</span></li>
+							<li><span class="box"><span class="tit4">시간</span> 10~60(분)</span></li>
+							<li><span class="box"><span class="tit5">성장항목</span> 근력</span></li>
+							<li><span class="box"><span class="tit6">신체활동 유형</span> 팔</span></li>
+						</ul>
+					</div>
+
+					<h4 class="subTitle">자료실</h4>
+					<div class="tableType0">
+						<table>
+							<caption>게임 관련 자료</caption>
+							<colgroup>
+								<col>
+								<col style="width:120px;">
+								<col style="width:110px;">
+								<col style="width:60px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">문서 명</th>
+									<th scope="col">종류</th>
+									<th scope="col">날짜</th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="name">공튀기기</td>
+									<td>해설서</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDown">다운로드</button></td>
+								</tr>
+								<tr>
+									<td class="name">배드민턴</td>
+									<td>해설서</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDown">다운로드</button></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 
 				</div>
-				<button type="button" onclick="layerClose();">게임 상세 소개 레이어닫기</button>
+				<button type="button" class="btnClose" onclick="$('.layerWrap').hide();">게임 상세 소개 레이어닫기</button>
 			</section>
 		</div>
 		<!-- //layer -->

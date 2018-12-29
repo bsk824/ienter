@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>아이엔터</title>
+	<link rel="stylesheet" href="resource/font/style.css">
+	<link rel="stylesheet" href="resource/css/common.css">
+	<link rel="stylesheet" href="resource/css/contents.css">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/jquery.datepicker.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<!-- header -->
+		<header id="header">
+			<div class="inner">
+				<h1><a href="/"><img src="resource/images/img_logo.png" alt="아이엔터"></a></h1>
+				<button type="button" class="btnMenu" onclick="$('body').toggleClass('menuOn');">메뉴</button>
+				<nav id="gnb">
+					<ul>
+						<li><a href="class.html" class="menu1">클래스</a></li>
+						<li><a href="record01.html" class="menu2">클래스 기록실</a></li>
+						<li><a href="game_info.html" class="menu3">게임소개</a></li>
+						<li class="active"><a href="edu.html" class="menu4">교육 자료실</a></li>
+					</ul>
+					<div class="mem">
+						<span>
+							<a href="#" class="signUp">회원가입</a>
+							<a href="#" class="signIn">로그인</a>
+						</span>
+						<span style="display:none;">
+							<span class="userName">
+								<img src="resource/images/img_user_sample.png" alt="">홍길동
+							</span>
+							<a href="#" class="memSet">설정</a>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- //header -->
+		
+		<div id="container">
+
+			<!-- snb -->
+			<div id="snb" class="sub04">
+				<h2 class="pageTitle"><span>교육 자료실</span></h2>
+			</div>
+			<!-- //snb -->
+
+			<!-- contents -->
+			<div id="contents">
+				<fieldset class="search">
+					<legend>검색일 입력</legend>
+					<span class="row">
+						<span class="cell sel">
+							<select>
+								<option>과목 전체</option>
+							</select>
+						</span>
+						<span class="cell sel">
+							<select>
+								<option>학년 전체</option>
+							</select>
+						</span>
+						<span class="cell sel">
+							<select>
+								<option>전체 단원</option>
+							</select>
+						</span>
+						<span class="cell inpu">
+							<input type="text" class="inputTxt">
+						</span>
+						<span class="cell btn">
+							<button class="btnType0">조회</button>
+						</span>
+					</span>
+				</fieldset>
+
+				<div class="tabMenu">
+					<ul>
+						<li class="active"><a href="#">스포츠 존</a></li>
+						<li><a href="#">VR 존</a></li>
+						<li><a href="#">플레이 존</a></li>
+					</ul>
+				</div>
+
+				<section class="section">
+					<h3 class="subTitle2">상세 검색</h3>
+					<button type="button" class="btnType0 btnRight" onclick="$(this).toggleClass('active').next('.searchDetail').slideToggle(200);">검 색조건 <span class="show">자세히보기</span><span class="hide">닫기</span></button>
+					<div class="searchDetail">
+						<table>
+							<caption>상세 검색 목록</caption>
+							<tbody>
+								<tr>
+									<th scope="row">공간</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>플레이 존</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>VR 존</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스포츠 존</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>체력증진</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>융합교육</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스포츠</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">과목 선택</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>국어</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>영어</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>수학</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>과학</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>상식</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>음악</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>미술</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>한자</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>기타</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">동작 유형</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>공 던지기</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>공 차기</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>공 치기</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">체력 항목</th>
+									<td>
+										<label class="inputChk">
+											<input type="checkbox" checked>
+											<span>심폐지구력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>근지구력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>근력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>유연성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>순발력</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>민첩성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>협융성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>평형성</span>
+										</label>
+										<label class="inputChk">
+											<input type="checkbox">
+											<span>스피드</span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btnWrap">
+							<button type="button" class="btnType0">검색</button>
+							<button type="button" class="btnType1" onclick="$(this).closest('.searchDetail').find('input').prop('checked', false);">전체 선택 해제</button>
+						</div> 
+					</div>
+
+					<div class="tableType0">
+						<table>
+							<caption>자료실</caption>
+							<colgroup>
+								<col style="width: 85px;">
+								<col>
+								<col style="width: 115px;">
+								<col style="width: 130px;">
+								<col style="width: 130px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">게임 명</th>
+									<th scope="col">종류</th>
+									<th scope="col">날짜</th>
+									<th scope="col">다운로드</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg">
+									<td>공지</td>
+									<td class="name">공지사항이 있습니다.</td>
+									<td></td>
+									<td>2018-12-25</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">배드민턴</td>
+									<td>해설서</td>
+									<td>2018-12-25</td>
+									<td><button type="button" class="btnDownTxt">다운로드</button></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">축구</td>
+									<td>지도안</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDownTxt">다운로드</button></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">축구</td>
+									<td>지도안</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDownTxt">다운로드</button></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">축구</td>
+									<td>지도안</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDownTxt">다운로드</button></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td class="name">축구</td>
+									<td>지도안</td>
+									<td>2018-12-15</td>
+									<td><button type="button" class="btnDownTxt">다운로드</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+			</div>
+			<!-- //contents -->
+		</div>
+
+		
+	</div>
+</body>
+</html>
